@@ -3,7 +3,6 @@ import PackageDescription
 /// Package
 let package = Package(
     name: "MyWrappedFramework",
-    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "MyWrappedFramework",
@@ -17,7 +16,8 @@ let package = Package(
             dependencies: [
                 "MainTarget",
                 "CoreTarget"
-            ]
+            ],
+            path: "MainTargetWrapper"
         ),
         .binaryTarget(
             name: "MainTarget",
