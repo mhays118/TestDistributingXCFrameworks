@@ -7,11 +7,18 @@ let package = Package(
     products: [
         .library(
             name: "MainTarget",
-            targets: ["MainTarget", "CoreTarget"]
+            targets: ["MainTargetWrapper"]
         )
     ],
     dependencies: [],
     targets: [
+        .target(
+            name: "MainTargetWrapper",
+            dependencies: [
+                "MainTarget",
+                "CoreTarget"
+            ]
+        )
         .binaryTarget(
             name: "MainTarget",
             path: "MainTarget.xcframework"
