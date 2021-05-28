@@ -2,11 +2,11 @@
 import PackageDescription
 /// Package
 let package = Package(
-    name: "MainTarget",
+    name: "MyWrappedFramework",
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "MainTarget",
+            name: "MyWrappedFramework",
             targets: ["MainTargetWrapper"]
         )
     ],
