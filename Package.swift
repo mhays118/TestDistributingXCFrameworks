@@ -18,7 +18,7 @@ let package = Package(
                 "MainTarget",
                 "CoreTarget"
             ]
-        )
+        ),
         .binaryTarget(
             name: "MainTarget",
             path: "MainTarget.xcframework"
