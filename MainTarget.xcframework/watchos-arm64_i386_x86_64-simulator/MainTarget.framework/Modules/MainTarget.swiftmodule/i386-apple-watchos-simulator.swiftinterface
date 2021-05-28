@@ -1,0 +1,10 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target i386-apple-watchos2.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MainTarget
+@_exported import CoreTarget
+import Swift
+public struct PrimaryService {
+  public var text: Swift.String
+  public var model: CoreTarget.SharedModel
+  public init(model: CoreTarget.SharedModel)
+}
