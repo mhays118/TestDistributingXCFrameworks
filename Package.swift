@@ -16,16 +16,17 @@ let package = Package(
             dependencies: [
                 "MainTarget",
                 "CoreTarget"
-            ],
-            path: "MainTargetWrapper"
+            ]
         ),
         .binaryTarget(
             name: "MainTarget",
-            path: "MainTarget.xcframework"
+            url: "https://github.com/mhays118/TestDistributingXCFrameworks/releases/download/1.0.0/MainTarget.zip",
+            checksum: "8f0fb58303b9d0b69f4dcfdbcd589a91e69b0222047295b9ec7bbb6bc98b8f82"
         ),
         .binaryTarget(
             name: "CoreTarget",
-            path: "CoreTarget.xcframework"
-        )
+            url: "https://github.com/mhays118/TestDistributingXCFrameworks/releases/download/1.0.0/CoreTarget.zip",
+            checksum: "6544fd6bde69feaeab92c5481930c5d8553fc73141546584f29b3756ae1d8a0d"
+        ),
     ]
 )
