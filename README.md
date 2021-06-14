@@ -6,3 +6,6 @@ Note how there is a wrapping project in the `Package.swift` file and there are d
 
 To see the library being used, look at the consumer app: 
 https://github.com/mhays118/TestSPMLibraryConsumerApp
+
+This has the XCFrameworks for the following library:
+https://github.com/mhays118/TestMergingModulesInSPM
